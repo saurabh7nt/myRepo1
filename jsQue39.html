@@ -1,0 +1,29 @@
+<!-- create a textbox (with id txt) & get value from textbox & check whether the entered value 
+    is string or number (hint: use isNaN() & if-else). show the result in console
+ -->
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <input type="text" name="" id="">
+        <button>click</button>
+    </body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+
+            let x = $("input").val();
+            console.log(typeof x);
+            if(x==isNaN)
+            {
+                console.log("a number");
+            }
+            else{
+                console.log("string");
+            }
+        })
+    })
+</script>

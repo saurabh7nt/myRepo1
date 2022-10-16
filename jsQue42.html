@@ -1,0 +1,22 @@
+<!--  create a textbox (with id txt). create a paragraph (having id para ). onclick event get 
+    value from textbox and display it within paragraph ( hint: you may use innerText or 
+    innerHTML , get the diff. between innerText,innerHTML) -->
+    <html>
+        <head>
+            <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        </head>
+        <body>
+            <input type="text" placeholder="Enter value">
+            <button>click</button>
+            <p>change will appear here.</p>
+        </body>
+    </html>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                let x = $("input").val();
+                $("p").text(x); 
+            })
+        })
+    </script>

@@ -1,0 +1,24 @@
+<!--  create a textbox (with id txt) & get value.
+if the value is string then show error in paragraph as only number is required -->
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <input type="text" placeholder="enter value">
+        <button>click</button>
+        <p>result will appear here</p>
+    </body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            let x = $("input").val();
+            if(x!=isNaN)
+            {
+                $("p").text("Errror..Only number is required");
+            } 
+        })
+    })
+</script>

@@ -1,0 +1,24 @@
+<!-- create a textbox (with id txt) & get value from textbox , in case textbox is empty then please show textbox
+border with color red & border width 2px. -->
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <input type="text" placeholder="enter value">
+        <button>click</button>
+    </body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            x = $("input").val();
+            if(x.length<1)
+            {   
+              //  console.log("worked");
+                $("input").css("border", "2px solid red");
+            }
+        })
+    })
+</script>

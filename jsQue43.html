@@ -1,0 +1,26 @@
+<!-- create a textbox (with id txt). create a paragraph (having id para ).onclick event get
+     only number from textbox & display square of the no which you have entered
+     ( hint: use Math library ) -->
+
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <input type="number">
+        <button>click</button>
+        <p>change will appear here</p>
+    </body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            let x = $("input").val();
+            if(x!=isNaN)
+            {
+                $("p").text("Square of number is : "+(x*x));
+            }
+        })
+    })
+</script>
